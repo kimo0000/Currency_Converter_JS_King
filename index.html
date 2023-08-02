@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter JS King</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/currency_converter.jpg">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="content">
+            <div class="first">
+                <select id="curency" onchange="getData(this.value)">
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input id="curency_input" oninput="getData(this.value)" type="number" value="0" min="0">
+            </div>
+            <div class="second">
+                <select id="worth" onchange="getData(this.value)">
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="INR">INR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input id="worth_input" oninput="getData(this.value)" type="number" min="0" disabled>
+            </div>
+        </div>
+        <div id="exchange">1 USD = 138.582 JPY</div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
